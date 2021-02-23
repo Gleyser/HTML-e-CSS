@@ -1,5 +1,13 @@
 /* CSS da página inicial */
 
+body {
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
 header img {
     display: block;
     margin-left: auto;
@@ -8,6 +16,8 @@ header img {
 
 nav {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav li {
@@ -21,4 +31,12 @@ nav a {
     text-decoration: none;
     color: #4169E1;
     text-transform: uppercase;
+}
+
+.textoinicial {
+    font-size: 20px;
+}
+
+p {
+    padding: 10px;
 }
