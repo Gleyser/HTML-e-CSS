@@ -55,10 +55,14 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     border-style: solid;
-    border-color: black;
+    border-color: #FFFFFF;
     border-width: 5px;
 }
 
 .produtos li:hover {
     border-color: #00BFFF;
+}
+
+.produtos li:active {
+    border-color: #088C19;
 }
