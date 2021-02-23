@@ -33,10 +33,32 @@ nav a {
     text-transform: uppercase;
 }
 
+nav a:hover {
+    color: #00BFFF;
+    text-decoration: underline;
+}
+
 .textoinicial {
     font-size: 20px;
 }
 
 p {
     padding: 10px;
+}
+
+.produtos {
+    text-align: center;
+}
+
+.produtos li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.produtos li:hover {
+    border-color: #00BFFF;
 }
