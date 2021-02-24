@@ -56,3 +56,7 @@ main img:hover {
 main img:active {
     border-color: #e710ca;
 }
+
+.video {
+    margin-left: 25%;
+}
