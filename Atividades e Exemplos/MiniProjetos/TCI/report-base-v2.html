@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Clima da equipe</title>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        p {
+            text-align: justify;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        .acima {
+            color: green;
+            font-weight: bold;
+        }
+        
+        .abaixo {
+            color: red;
+            font-weight: bold;
+        }
+        
+        .zc-body {
+            background-color: #fff;
+        }
+        
+        .chart--container {
+            width: 100%;
+            height: 100%;
+            min-height: 530px;
+        }
+        
+        .zc-ref {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading">Clima da equipe </h2>
+
+                <p>Liderar equipes visando ótimos resultados envolve <strong>monitorar como os membros da equipe estão se sentindo, suas motivações e níveis de satisfação</strong>. A avaliação do clima da equipe por meio do <strong>Team Climate Inventory (TCI)</strong>                    pode ajudar nessa atividade!
+                </p>
+
+                <p>Clima da equipe é a <strong>percepção compartilhada da equipe em relação aos procedimentos de trabalho da equipe, práticas e comportamentos dos membros.</strong> Essas percepções estão associadas com os resultados, satisfação e desempenho.</p>
+
+                <p>O clima da equipe é representado por 4 fatores: <strong>team vision, task orientation, support for innovation e participative safety</strong>. O clima da equipe é a média dos scores desses 4 fatores. A seguir temos a definição dos fatores:</p>
+
+                <ul>
+                    <li><strong>Team vision:</strong> percepção compartilhada de que a equipe trabalha com <strong>objetivos claros e bem definidos.</strong> </li>
+                    <li><strong>Task orientation:</strong> percepção compartilhada da responsabilidade individual e da equipe em relação ao <strong>compromisso no desempenho das tarefas</strong>, em busca da qualidade no trabalho. </li>
+                    <li><strong>Support for innovation:</strong> percepção compartilhada da existência de <strong>suporte para introdução de novas ideias </strong> pelos membros da equipe. </li>
+                    <li><strong>Participative safety:</strong> percepção compartilhada de que os membros sentem-se seguros em <strong>expor suas percepções e idéias</strong> na tomada de decisões sem se sentirem julgados ou censurados por outros membros da
+                        equipe. </li>
+
+
+                </ul>
+
+            </div>
+
+            <!-- <div class="col-md-4">
+                <img src="teams.png">
+
+            </div> -->
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading">Quais perguntas o TCI pode ajudar a responder? </h2>
+                <p>A avaliação dos resultados do TCI pode ajudar a responder perguntas importantes, tais como: </p>
+
+                <ul>
+                    <li><strong>A equipe entende os objetivos e metas a serem alcançados? </strong>
+                    </li>
+                    Para responder essa pergunta, analise os resultados do fator Team vision. Se estiver baixo, a equipe provavelmente não entende os objetivos e metas.
+
+                    <li><strong>A equipe acredita que existe compromisso de todos no desempenho das tarefas? </strong>
+
+                    </li>
+                    Para responder essa pergunta, analise os resultados do fator Task orientation. Se estiver baixo, a percepção da equipe é que não existe compromisso com as tarefas.
+
+                    <li><strong>A equipe entende que recebe apoio e suporte do líder e da organização?</strong>
+
+                    </li>
+                    Para responder essa pergunta, analise os resultados do fator Support for innovation. Se estiver baixo, a percepção da equipe é que não existe suporte do líder e/ou da organização.
+
+                    <li><strong>A equipe sente que existe o sentimento de "estamos juntos"?</strong>
+                    </li>Para responder essa pergunta, analise os resultados do fator Participative safety. Se estiver baixo, provavelmente não está ocorrendo interações suficiente entre os membros da equipe.
+
+                    <li><strong>A equipe percebe que existe progresso no desenvolvimento pessoal e das atividades? </strong></li> Para responder essa pergunta, analise os resultados do fator Task orientation. Se estiver baixo, a equipe provavelmente não está
+                    percebendo progresso e desenvolvimento pessoal.
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading">Quais os prováveis efeitos se o clima da equipe estiver baixo?</h2>
+                <p>Quando o clima da equipe não é agradável, os membros não se sentem motivados a desempenhar as atividades, ocasionando <strong> perda de prazos, dívida técnica, prejuízos para a organização, etc.</strong> Além disso, esses membros tendem
+                    a procurar outros projetos ou empresas, <strong>aumentando o fluxo de entradas e saídas de colaboradores.</strong>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Qual o clima da sua equipe? </h2>
+
+            </div>
+
+            <div class="row align-items-start">
+
+                <div class="col">
+                    <p>
+                        <div class="col">
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseTeamVision" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  Team Vision
+                                </a>
+
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseTaskOrientation" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Task Orientation
+                                  </a>
+
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseSupportForInnovation" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Support for innovation
+                                  </a>
+
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseParticipativeSafety" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Participative Safety
+                                  </a>
+
+                            </p>
+                            <div class="collapse" id="collapseTeamVision">
+                                <div class="card">
+                                    <h3>Team vision</h3>
+
+                                    <p>O team vision estando <span class="acima"> acima </span>de 4,21 indica que em comparação com a média do VIRTUS, a equipe é efetiva a desenvolver o trabalho, pois conhecem e acreditam que os objetivos são úteis, alcançáveis
+                                        e que fazem sentido para a organização.</p>
+
+                                    <span>Quando o team vision está <span class="abaixo">abaixo,</span> a percepção da equipe é que objetivos não são realistas ou que não podem ser atingidos, o que pode diminuir o comprometimento da equipe. Essa percepção
+                                    pode decorrer da falta de compreensão dos objetivos. </p>
+
+
+                    </div>
+                    </div>
+
+                    <div class="collapse" id="collapseTaskOrientation">
+                        <div class="card">
+                            <h3>Task orientation</h3>
+
+                            <p>O task orientation estando <span class="acima">acima </span> de 4,08 indica que em comparação com a média do VIRTUS, a equipe preocupa-se em atingir os mais altos padrões de desempenho</span> e que se monitoram para manter
+                                a qualidade do trabalho desenvolvido. Além disso, os membros compreendem que existem critérios bem definidos para alcançar a excelência.</p>
+
+                            <p>Task orientation <span class="abaixo">abaixo</span>, indica que a percepção da equipe é que os membros não possuem responsabilidade e compromisso no desempenho das tarefas. Essa percepção pode decorrer da falta de monitoramento,
+                                acompanhamento ou avaliação crítica dos pontos fracos por meio de critérios bem definidos. </p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="collapseSupportForInnovation">
+                        <div class="card">
+                            <h3>Support for innovation</h3>
+
+                            <p>O support for innovation estando <span class="acima">acima </span> de 3,98 indica que em comparação com a média do VIRTUS, a equipe entende que existe assistência para o desenvolvimento de novas idéias e que os membros cooperam
+                                no desenvolvimento e aplicação de novas idéias. </p>
+
+                            <p>Quando o support for innovation está <span class="abaixo">abaixo</span>, a percepção da equipe é de que os membros da equipe não fornecem suporte prático para novas idéias ou que não estão dispostos a inovar. Essa percepção
+                                pode decorrer devido a equipe não ser aberta e receptiva à mudança ou não dedicar o tempo necessário para desenvolver inovações.</p>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="collapseParticipativeSafety">
+                        <div class="card">
+                            <h3>Participative safety</h3>
+
+                            <p>O participative safety estando <span class="acima">acima </span> de 4,21 indica que em comparação com a média do VIRTUS, na equipe existe participação segura dos membros da equipe em sugerir alternativas e participar das decisões
+                                em conjunto. Nesse sentido, existe o sentimento de “estamos juntos” e as pessoas se sentem compreendidas e aceitas umas pelas outras. </p>
+
+                            <p>Participative safety <span class="abaixo">abaixo</span>, indica que os membros não se sentem seguros em compartilhar informações com a equipe. Essa percepção pode ocorrer porque a opinião de todos não é ouvida ou porque os
+                                membros não se vêem como membros de uma mesma equipe. Além disso, a ausência de contato para conversas formais e informais entre os membros da equipe também pode contribuir para valor baixo nesse fator.</p>
+
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <div id="myChart" class="chart--container">
+                        <a class="zc-ref" href="https://www.zingchart.com/"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading">Quais açoes podem ser realizadas para melhorar o clima da equipe?</h2>
+
+                <p> A seguir listamos ações que podem ser desenvolvidas para aumentar os fatores do clima da equipe:</p>
+
+
+                <ul>
+                    <li><strong>Team vision:</strong> Garantir que todos os membros da equipe entendem os objetivos da equipe. Mostrar que são objetivos úteis e alcançaveis. Aumentar o compromisso dos membros com esses objetivos. </li>
+                    <li><strong>Task orientation:</strong> Promover ajuda mútua entre os membros (troca de conhecimento, ajuda em questões técnicas), promover monitoramento e acompanhamento dos membros por meio de critérios claros, desenvolver acompanhamento
+                        e avaliação por pares, avaliar em conjunto pontos de melhoria. </li>
+                    <li><strong>Support for innovation:</strong> Mostrar-se aberto e receptivo a mudanças. Apoiar novas ideias. </li>
+                    <li><strong>Participative safety:</strong> Promover contatos informais entre os membros da equipe. Manter contato regular entre os membros. Ouvir a opinião de todos. Apoiar o compartilhamento de informações.</li>
+
+                </ul>
+            </div>
+
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading">Como esses dados foram coletados e analisados?</h2>
+                <p>Os dados apresentados foram coletados no VIRTUS WORKSHOP Happy Software Teams realizado em 08 e 11 de Janeiro de 2021. Foram analisados no contexto do projeto de pesquisa do Intelligent Software Engineering (ISE).
+                </p>
+
+                <p>A análise apresenta situações e possibilidades. A interpretação dos resultados é sensível ao contexto, sendo necessário o gestor analisar e tirar as próprias conclusões. Se você precisar de ajuda para interpretar os resultados, tiver interesse
+                    em discutir ideias ou conhecer mais sobre o assunto, entre em contato com Gleyser Guimarães, do ISE (Intelligent Software Engineering), pelo e-mail: gleyser@copin.ufcg.edu.br</p>
+                </p>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script>
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+        var myConfig = {
+            type: 'radar',
+            legend: {
+                align: "center",
+                'vertical-align': "bottom"
+            },
+            plot: {
+                aspect: 'area',
+                animation: {
+                    effect: 3,
+                    sequence: 1,
+                    speed: 700
+                }
+            },
+            scaleV: {
+                visible: false
+            },
+            scaleK: {
+                values: '0:4:1',
+                labels: ['Team vision', 'Task orientation', 'Support for inovation', 'Participative Safety', 'Clima da equipe'],
+                item: {
+                    fontColor: '#607D8B',
+                    backgroundColor: "white",
+                    borderColor: "#aeaeae",
+                    borderWidth: 1,
+                    padding: '5 10',
+                    borderRadius: 10
+                },
+                refLine: {
+                    lineColor: '#c10000'
+                },
+                tick: {
+                    lineColor: '#59869c',
+                    lineWidth: 2,
+                    lineStyle: 'dotted',
+                    size: 20
+                },
+                guide: {
+                    lineColor: "#607D8B",
+                    lineStyle: 'solid',
+                    alpha: 0.3,
+                    backgroundColor: "#c5c5c5 #718eb4"
+                }
+            },
+            series: [{
+                values: [3.48051948, 3.265306122, 3.017857143, 3.571428572, 3.86],
+                text: 'Equipe XXX'
+            }, {
+                values: [4.214823393, 4.085532302, 3.984076433, 4.212845011, 3.86],
+                text: 'VIRTUS',
+                lineColor: '#53a534',
+                backgroundColor: '#689F38'
+            }]
+        };
+
+        zingchart.render({
+            id: 'myChart',
+            data: myConfig,
+            height: '100%',
+            width: '100%'
+        });
+    </script>
+</body>
+
+</html>
