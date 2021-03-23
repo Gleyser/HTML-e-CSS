@@ -1,0 +1,58 @@
+body {
+    margin-left: 20%;
+}
+
+.menu {
+    display: inline;
+}
+
+img {
+    display: inline;
+}
+
+nav {
+    margin-left: 30%;
+    margin-top: -10%;
+}
+
+nav li {
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 2%;
+}
+
+nav a {
+    color: #DAA520;
+}
+
+nav a:hover {
+    color: #CD853F;
+}
+
+main {
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+.descrição {
+    color: #8B4513;
+    font-size: 30px;
+    margin-bottom: 4%px;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    color: #8B4513;
+    margin-right: 20%;
+    margin-bottom: 10%x;
+}
+
+footer {
+    color: #8B4513;
+    text-align: right;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}

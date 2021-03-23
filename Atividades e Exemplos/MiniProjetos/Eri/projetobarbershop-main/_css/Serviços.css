@@ -1,0 +1,31 @@
+.serviço {
+    text-align: justify;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.barbo {
+    display: inline;
+    width: 50%;
+    height: 50%;
+}
+
+.text {
+    display: inline;
+}
+
+h1 {
+    color: #8B4513;
+}
+
+.corte {
+    display: inline;
+    width: 40%;
+    height: 40%;
+}
+
+.alisa {
+    display: inline;
+    width: 50%;
+    height: 50%;
+}

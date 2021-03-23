@@ -1,0 +1,54 @@
+body {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 8px;
+}
+
+header {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+nav a {
+    color: #000408;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #58595a;
+    text-decoration: underline;
+}
+
+.textohome {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+div h3 {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+img {
+    padding: 5px 5px 5px 5px;
+}
+
+main li {
+    display: inline;
+    margin: 0 0 0 25px;
+}
